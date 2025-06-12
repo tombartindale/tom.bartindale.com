@@ -1,16 +1,18 @@
 <template>
   <div class="side-panel">
-    <img :src="info.frontmatter.image" />
+    <img class="img" :src="info.frontmatter.image" />
 
     <h4>When</h4>
     <div>~{{ simpleDate(info.frontmatter.date) }}</div>
 
-    <h4>Related Publications</h4>
-    <div v-for="pub of pubs" :key="pub.id" class="pub">
-      <a :href="pub.url">{{ pub.title }}</a>
-      <div class="author">{{ pub.author }}</div>
-      <div class="year">{{ pub.year }}</div>
-      <div class="venue">{{ pub.booktitle }}</div>
+    <div v-if="pubs.length">
+      <h4>Related Publications</h4>
+      <div v-for="pub of pubs" :key="pub.id" class="pub">
+        <a :href="pub.url">{{ pub.title }}</a>
+        <div class="author">{{ pub.author }}</div>
+        <div class="year">{{ pub.year }}</div>
+        <div class="venue">{{ pub.booktitle }}</div>
+      </div>
     </div>
   </div>
 </template>
@@ -58,11 +60,16 @@ export default {
 <style lang="css" scoped>
 .side-panel {
   overflow: hidden;
+  padding-top: 2.5rem;
+}
+
+.img {
+  border-radius: 5px;
 }
 
 .pub div,
 .pub a {
-  font-size: 0.8rem !important;
+  /* font-size: 0.8rem !important; */
 }
 .author {
   color: #aaa;
