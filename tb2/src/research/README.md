@@ -15,6 +15,10 @@ tagline: I seek to leverage new interaction techniques, ubiquitous mobile techno
 # footer: Made by  with ❤️
 ---
 
-[Publications](/publications)
+::: slot hero-bottom
 
-<ProjectsList />
+<a href="/publications" class="btn">Publications</a>
+
+:::
+
+<ProjectsList :dir="'research'" />

@@ -3,11 +3,19 @@
     <div v-for="index in sorted" :key="index" class="project-item">
       <h2>{{ index }}</h2>
       <div v-for="paper in items[index]">
-        <a target="_BLANK" :href="`https://doi.org/${paper.entryTags.doi}`"
-          ><h4>{{ paper.entryTags.title }}</h4></a
-        >
-        <p>{{ paper.entryTags.author }}</p>
-        <i>{{ paper.entryTags.journal }}</i>
+        <p>
+          <a target="_BLANK" :href="`https://doi.org/${paper.entryTags.doi}`"
+            ><h4 style="margin-bottom: 0">
+              {{ paper.entryTags.title }}
+            </h4></a
+          >
+        </p>
+        <p>
+          {{ paper.entryTags.author }}
+          <br />
+          <i>{{ paper.entryTags.journal }}</i>
+        </p>
+        <p style="color: #aaa"></p>
         <!-- {{ paper.entryTags.doi }} -->
       </div>
     </div>
@@ -34,7 +42,7 @@ export default {
 
     // console.log(bibJSON);
     this.items = bibJSON;
-    console.log(reverse(Object.keys(this.items)));
+    // console.log(reverse(Object.keys(this.items)));
   },
   computed: {
     sorted() {

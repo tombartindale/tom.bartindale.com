@@ -15,4 +15,4 @@ tagline: A selection of interaction techniques, technologies and installations t
 # footer: Made by  with ❤️
 ---
 
-<ProjectsList />
+<ProjectsList :dir="'projects'" />
