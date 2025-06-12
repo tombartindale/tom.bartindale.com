@@ -61,6 +61,7 @@ export default {
 .side-panel {
   overflow: hidden;
   padding-top: 2.5rem;
+  /* height: 50vh; */
 }
 
 .img {
