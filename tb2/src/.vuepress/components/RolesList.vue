@@ -1,11 +1,11 @@
 <template>
   <div>
     <!-- {{ items }} -->
-    <div v-for="(group, index) in items" :key="index" class="project-item">
+    <div v-for="index in reversed" :key="index" class="project-item">
       <p class="year">
         {{ index }}
       </p>
-      <div v-for="item in group" :key="item.title" class="role">
+      <div v-for="item in items[index]" :key="item.title" class="role">
         <div class="rotate" :class="item.type.toLowerCase()">
           <div>{{ item.type }}</div>
         </div>
@@ -19,6 +19,7 @@
 
 <script>
 import groupBy from "lodash/groupBy";
+import reverse from "lodash/reverse";
 
 export default {
   mounted() {
@@ -41,6 +42,11 @@ export default {
     return {
       items: [],
     };
+  },
+  computed: {
+    reversed() {
+      return reverse(Object.keys(this.items));
+    },
   },
 };
 </script>
@@ -70,6 +76,11 @@ p {
   padding: 12px;
   padding-left: 50px;
   margin-bottom: 18px;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 840px;
+  max-width: calc(100% - 4rem);
 }
 
 .rotate {
