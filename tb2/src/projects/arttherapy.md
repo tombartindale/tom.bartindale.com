@@ -2,7 +2,7 @@
 title: Art Therapy Easels
 
 description: Hand solid oak and walnut multi-touch artists easels include a high resolution, super sensitive multi-touch FTIR screen.
-image: /easels.jpg
+image: /images/easels.jpg
 
 date: 12/2010
 publications:

@@ -2,7 +2,7 @@
 title: Lindow Man
 
 description: Interactive multi-touch museum exhibit allowed visitors to explore the death of Lindow Man.
-image: /lindowman.jpg
+image: /images/lindowman.jpg
 
 date: 08/2010
 ---

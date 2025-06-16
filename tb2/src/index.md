@@ -23,6 +23,10 @@ tagline:
 <a href="http://uk.linkedin.com/pub/tom-bartindale/5a/ba9/a98">Connect on LinkedIn</a>
 :::
 
+::: slot position
+
 # Current Position
 
 I am currently an Associate Professor (Reader) at Northumbria University, Newcastle upon Tyne, UK.
+
+:::

@@ -1,7 +1,7 @@
 ---
 title: My Great North Run
 description: Large interactive museum installation to collect and interact with personal stories.
-image: /gnr.jpg
+image: /images/gnr.jpg
 
 date: 4/2011
 publications:

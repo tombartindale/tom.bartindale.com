@@ -2,7 +2,7 @@
 title: Art Therapy Multi-touch
 
 description: A custom built multi-touch coffee table. Replicates real world properties of finger painting art therapy.
-image: /artmultitouch.jpg
+image: /images/artmultitouch.jpg
 
 date: 07/2009
 ---

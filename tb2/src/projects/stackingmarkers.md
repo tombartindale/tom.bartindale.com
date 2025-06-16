@@ -2,7 +2,7 @@
 title: Stacking Markers
 
 description: A tangible marker scheme for tracking multiple stacked objects in various cominations on an optical surface.
-image: /stacking.jpg
+image: /images/stacking.jpg
 
 date: 01/2009
 publications:

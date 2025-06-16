@@ -1,7 +1,7 @@
 ---
 title: ReactApp
 description: Mobile app to play branching narrative video, teaching young people about Epinephrine pen use.
-image: /reactapp.jpg
+image: /images/reactapp.jpg
 
 date: 2/2013
 publications:

@@ -2,7 +2,7 @@
 title: Tangible Poetry
 
 description: A custom built multi-touch coffee table. Replicates real world properties of finger painting art therapy.
-image: /poetry.jpg
+image: /images/poetry.jpg
 
 date: 07/2009
 ---

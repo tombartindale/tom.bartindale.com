@@ -41,7 +41,7 @@
           <p v-if="data.actionText && data.actionLink" class="action">
             <NavLink class="action-button" :item="actionLink" />
           </p>
-          <Content slot-key="hero-bottom" />
+          <Content slot-key="hero-bottom" class="hero-bottom" />
         </div>
       </div>
     </header>
@@ -56,7 +56,7 @@
         <p>{{ feature.details }}</p>
       </div>
     </div>
-
+    <Content slot-key="position" class="theme-default-content" />
     <Content class="theme-default-content custom" />
 
     <div v-if="data.footer" class="footer">
@@ -113,25 +113,36 @@ export default {
 .hero-right
   max-width:900px
 
+.hero-bottom
+  margin-bottom 3rem
+
+
 .img-top
   display none
-  clear both
+  align-items flex-start
+  justify-content between
+
   margin-top 1.5rem
   img
-    width 90px
-    float left
+    width 100px
     margin 0 !important
     padding 0 !important
+    margin-top .3rem !important
   .img-top-text
-    padding-left 8.5rem
-    padding-top 1rem
+    text-align right
+    flex-grow 1
+
+
+
+
+
 
 
 @media (max-width: $MQMobile)
   .img-left
     display none
   .img-top
-    display block
+    display flex
   .hero-flex
     margin-top 0
 

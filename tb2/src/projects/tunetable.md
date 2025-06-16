@@ -2,7 +2,7 @@
 title: TuneTable
 
 description: Collaborative tangible interface to take on the role of a music producer and control sound.
-image: /tunetable.jpg
+image: /images/tunetable.jpg
 
 date: 12/2010
 ---

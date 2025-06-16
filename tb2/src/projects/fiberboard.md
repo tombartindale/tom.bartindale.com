@@ -2,7 +2,7 @@
 title: Fiberboard
 
 description: An optical fibre based solution for creating thin form-factor optical multi-touch tracking.
-image: /fiberboard.png
+image: /images/fiberboard.png
 
 date: 08/2009
 publications:

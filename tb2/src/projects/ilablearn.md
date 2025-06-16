@@ -2,7 +2,7 @@
 title: iLab Learn Kitchen
 
 description: Fully augmented working kitchen with sensor pub-sub infrstructure used for teaching languages through cooking.
-image: /ilablearn.jpg
+image: /images/ilablearn.jpg
 
 date: 12/2010
 ---

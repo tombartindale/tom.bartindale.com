@@ -2,7 +2,7 @@
 title: FlirtBar
 
 description: A social experiment using tracked drinks mats to start conversation around an augmented bar area.
-image: /flirtbar.jpg
+image: /images/flirtbar.jpg
 
 date: 12/2010
 ---

@@ -1,7 +1,7 @@
 ---
 title: PollBook Interactive
 description: 18C voting registry augmented with digital content, notes and facts to match the current page.
-image: /pollbook.jpg
+image: /images/pollbook.jpg
 
 date: 2/2013
 ---

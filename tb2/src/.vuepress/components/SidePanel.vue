@@ -23,15 +23,19 @@ var bibtexParse = require("@orcid/bibtex-parse-js");
 export default {
   mounted() {
     this.info = this.$page;
+    // console.log(this.info.frontmatter.publications);
 
     if (this.info.frontmatter.publications)
       for (const paper of this.info.frontmatter.publications) {
         // console.log(paper);
-        const bibJSON = bibtexParse.toJSON(paper);
-        this.pubs.push(bibJSON[0].entryTags);
+        try {
+          const bibJSON = bibtexParse.toJSON(paper);
+          console.log(bibJSON);
+          if (bibJSON.length) this.pubs.push(bibJSON[0].entryTags);
+        } catch (e) {
+          console.error(e);
+        }
       }
-
-    // console.log(this.pubs);
   },
   methods: {
     simpleDate(date) {

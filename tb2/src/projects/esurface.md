@@ -2,7 +2,7 @@
 title: E-Surface Science
 
 description: Exploration of tangible interfaces for collaborative interaction with large data-sets in E-Science.
-image: /esurface.jpg
+image: /images/esurface.jpg
 
 date: 10/2009
 publications:
