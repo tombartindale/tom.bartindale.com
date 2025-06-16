@@ -5,6 +5,14 @@
     <h4>When</h4>
     <div>~{{ simpleDate(info.frontmatter.date) }}</div>
 
+    <h4 v-if="info.frontmatter.links.length">Links</h4>
+    <a
+      target="_BLANK"
+      :href="link.url"
+      v-for="link of info.frontmatter.links"
+      >{{ link.title }}</a
+    >
+
     <div v-if="pubs.length">
       <h4>Related Publications</h4>
       <div v-for="pub of pubs" :key="pub.id" class="pub">
