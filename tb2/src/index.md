@@ -18,7 +18,8 @@ tagline:
 ---
 
 ::: slot hero-left
-<a href="/tom_bartindale_cv.pdf" class="btn">Download my CV</a>
+
+<!-- <a href="/tom_bartindale_cv.pdf" class="btn">Download my CV</a> -->
 
 <a href="http://uk.linkedin.com/pub/tom-bartindale/5a/ba9/a98">Connect on LinkedIn</a>
 :::

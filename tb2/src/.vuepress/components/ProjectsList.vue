@@ -3,7 +3,9 @@
     <div v-for="(item, index) in items" :key="index" class="project-item">
       <a :href="item.link" rel="noopener noreferrer">
         <div
-          :style="`background-image:url(${item.image});background-color:#eee`"
+          :style="`background-image:url(${
+            item.thumbnail || item.image
+          });background-color:#eee`"
           class="img"
         ></div>
         <!-- <img v-if="item.image" :src="item.image" alt="" /> -->
@@ -24,7 +26,6 @@ import orderBy from "lodash/orderBy";
 export default {
   props: ["dir"],
   mounted() {
-    // console.log(orderBy);
     this.items = orderBy(
       this.$site.pages
         .filter(
@@ -37,10 +38,12 @@ export default {
           description: page.frontmatter.description,
           date: page.frontmatter.date,
           link: page.path,
+          thumbnail: page.frontmatter.thumbnail,
         })),
       (f) => this.simpleDate(f.date),
       "desc"
     );
+    // console.log(this.items);
   },
   methods: {
     simpleDate(date) {
