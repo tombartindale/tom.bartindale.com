@@ -5,7 +5,7 @@
     <h4>When</h4>
     <div>~{{ simpleDate(info.frontmatter.date) }}</div>
 
-    <h4 v-if="info.frontmatter.links.length">Links</h4>
+    <h4 v-if="info.frontmatter.links?.length">Links</h4>
     <a
       target="_BLANK"
       :href="link.url"
