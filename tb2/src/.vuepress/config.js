@@ -54,6 +54,7 @@ module.exports = {
         link: "/roles/",
       },
     ],
+    smoothScroll: true,
     sidebar: {
       // "/guide/": [
       //   {

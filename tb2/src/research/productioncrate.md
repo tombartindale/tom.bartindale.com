@@ -5,9 +5,10 @@ description: DMX and MIDI interfaces to prototype production technology using .N
 image: /images/productioncrate.jpg
 
 date: 06/2012
+
 publications:
   - |
-    CONFERENCE{Taylor2014835,
+    @CONFERENCE{Taylor2014835,
     author = {Taylor, Nick and Bartindale, Tom and Vines, John and Olivier, Patrick},
     title = {Exploring delegate engagement with an augmented conference},
     year = {2014},
@@ -19,6 +20,7 @@ publications:
     publication_stage = {Final},
     source = {Scopus},
     note = {Cited by: 3; All Open Access, Green Open Access}
+    }
 ---
 
 # ProductionCrate

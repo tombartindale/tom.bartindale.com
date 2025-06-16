@@ -29,8 +29,9 @@ export default {
       for (const paper of this.info.frontmatter.publications) {
         // console.log(paper);
         try {
+          // console.log(paper);
           const bibJSON = bibtexParse.toJSON(paper);
-          console.log(bibJSON);
+          // console.log(bibJSON);
           if (bibJSON.length) this.pubs.push(bibJSON[0].entryTags);
         } catch (e) {
           console.error(e);

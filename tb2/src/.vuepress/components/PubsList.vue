@@ -1,7 +1,13 @@
 <template>
   <div>
+    <div class="nav">
+      <span v-for="year in sorted" :key="year">
+        <a :href="`#${year}`">{{ year }}</a> &middot;
+      </span>
+    </div>
+
     <div v-for="index in sorted" :key="index" class="project-item">
-      <h2>{{ index }}</h2>
+      <a class="year" :name="index">{{ index }}</a>
       <div v-for="paper in items[index]">
         <p>
           <a target="_BLANK" :href="`https://doi.org/${paper.entryTags.doi}`"
@@ -56,3 +62,24 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.year {
+  display: block;
+  text-align: center;
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+  color: #ccc;
+}
+
+h4 {
+  font-weight: 400;
+}
+
+.nav {
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: -3rem;
+}
+</style>
