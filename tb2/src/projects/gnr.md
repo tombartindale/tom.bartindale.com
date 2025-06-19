@@ -5,20 +5,7 @@ image: /images/gnr.jpg
 
 date: 4/2011
 publications:
-  - |
-    @CONFERENCE{Clarke2015212,
-    author = {Clarke, Rachel and Vines, John and Wright, Peter and Bartindale, Tom and Shearer, John and McCarthy, John and Olivier, Patrick},
-    title = {MyRun: Balancing design for reflection, recounting and openness in a museum-based participatory platform},
-    year = {2015},
-    journal = {ACM International Conference Proceeding Series},
-    pages = {212 – 221},
-    doi = {10.1145/2783446.2783569},
-    url = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-85015440504&doi=10.1145%2f2783446.2783569&partnerID=40&md5=e2b24b45b3a6f09c56f67e336f76cf9a},
-    type = {Conference paper},
-    publication_stage = {Final},
-    source = {Scopus},
-    note = {Cited by: 4}
-    }
+  - Clarke2015212
 ---
 
 # My Great North Run

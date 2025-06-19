@@ -11,19 +11,7 @@ links:
 date: 4/2023
 
 publications:
-  - |
-    @CONFERENCE{Angelucci2023,
-      author = {Angelucci, Margherita and Marshall, Harrison and Tebourbi, Meriem and Seguin, Joshua Paolo and Varghese, Delvin and Olivier, Patrick and Bartindale, Tom},
-      title = {Action Translate: Supporting Students in Translation Volunteering},
-      year = {2023},
-      journal = {Conference on Human Factors in Computing Systems - Proceedings},
-      doi = {10.1145/3544548.3581129},
-      url = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-85160009567&doi=10.1145%2f3544548.3581129&partnerID=40&md5=c730863e4d16027cf4c6fa746a3682cc},
-      type = {Conference paper},
-      publication_stage = {Final},
-      source = {Scopus},
-      note = {Cited by: 3; All Open Access, Bronze Open Access}
-    }
+  - Angelucci2023
 ---
 
 # Action Translate

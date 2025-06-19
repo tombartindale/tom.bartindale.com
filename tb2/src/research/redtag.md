@@ -7,20 +7,7 @@ image: /images/redtag.png
 date: 06/2014
 
 publications:
-  - |
-    @CONFERENCE{Bartindale201419,
-      author = {Bartindale, Tom and Jackson, Daniel and Ladha, Karim and Mellor, Sebastian and Olivier, Patrick and Wright, Peter},
-      title = {RedTag: Automatic content metadata capture for cameras},
-      year = {2014},
-      journal = {TVX 2014 - Proceedings of the 2014 ACM International Conference on Interactive Experiences for TV and Online Video},
-      pages = {19 – 22},
-      doi = {10.1145/2602299.2602303},
-      url = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84904459532&doi=10.1145%2f2602299.2602303&partnerID=40&md5=e03d29c9e7571da845d49eef0bf21c7f},
-      type = {Conference paper},
-      publication_stage = {Final},
-      source = {Scopus},
-      note = {Cited by: 3}
-    }
+  - Bartindale201419
 ---
 
 # RedTag

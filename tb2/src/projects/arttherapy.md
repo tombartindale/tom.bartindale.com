@@ -6,19 +6,7 @@ image: /images/easels.jpg
 
 date: 12/2010
 publications:
-  - |
-    @CONFERENCE{Blunsden2009,
-    author = {Blunsden, Scott and Richards, Brandi and Bartindale, Tom and Jackson, Dan and Olivier, Patrick and Boger, Jen and Mihailidis, Alex and Hoey, Jesse},
-    title = {Design and prototype of a device to engage cognitively disabled older adults in visual artwork},
-    year = {2009},
-    journal = {ACM International Conference Proceeding Series},
-    doi = {10.1145/1579114.1579162},
-    url = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-70450240990&doi=10.1145%2f1579114.1579162&partnerID=40&md5=ec39ff83380e9ff23bc17c1481755c46},
-    type = {Conference paper},
-    publication_stage = {Final},
-    source = {Scopus},
-    note = {Cited by: 9}
-    }
+  - Blunsden2009
 ---
 
 # Art Therapy Easels

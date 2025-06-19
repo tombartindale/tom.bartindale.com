@@ -28,6 +28,10 @@ tagline:
 
 # Current Position
 
-I am currently an Associate Professor (Reader) at Northumbria University, Newcastle upon Tyne, UK.
+I am currently an Associate Professor (Reader) at Northumbria University, Newcastle upon Tyne, UK. <a href="https://northumbria.ac.uk/about-us/our-staff/tom-bartindale">View Institutional Profile</a>
+
+<small class="small">
+Previously, I co-founded the Action Lab research group at Monash University, Melbourne, and worked at Open Lab at Newcastle University, UK
+</small>
 
 :::

@@ -5,24 +5,9 @@ description: Community radio stations for the developing world based on IVR and 
 image: /images/citizenradio.png
 
 date: 10/2014
-code:
 
 publications:
-  - |
-    @CONFERENCE{Talhouk2017193,
-      author = {Talhouk, R. and Bartindale, T. and Montague, K. and Mesmar, S. and Akik, C. and Ghassani, A. and Najem, M. and Ghattas, H. and Olivier, P. and Balaam, M.},
-      title = {Implications of synchronous IVR radio on Syrian refugee health and community dynamics},
-      year = {2017},
-      journal = {ACM International Conference Proceeding Series},
-      volume = {Part F128532},
-      pages = {193 – 202},
-      doi = {10.1145/3083671.3083690},
-      url = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-85025148028&doi=10.1145%2f3083671.3083690&partnerID=40&md5=8ee9c6130e28f386c91d1b19b152818d},
-      type = {Conference paper},
-      publication_stage = {Final},
-      source = {Scopus},
-      note = {Cited by: 53; All Open Access, Bronze Open Access, Green Open Access}
-    }
+  - Talhouk2017193
 ---
 
 # Citizen Radio

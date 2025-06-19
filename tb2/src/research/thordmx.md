@@ -6,21 +6,7 @@ image: /images/thordmx1.jpg
 
 date: 04/2013
 publications:
-  - |
-    @CONFERENCE{Bartindale20133019,
-      author = {Bartindale, Tom and Olivier, Patrick},
-      title = {ThorDMX: A Prototyping Toolkit for Interactive Stage Lighting Control},
-      year = {2013},
-      journal = {Conference on Human Factors in Computing Systems - Proceedings},
-      volume = {2013-April},
-      pages = {3019 – 3022},
-      doi = {10.1145/2468356.2479600},
-      url = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84893279271&doi=10.1145%2f2468356.2479600&partnerID=40&md5=a49be6617ae7d494ff9d137d69f01053},
-      type = {Conference paper},
-      publication_stage = {Final},
-      source = {Scopus},
-      note = {Cited by: 3}
-      }
+  - Bartindale20133019
 ---
 
 # ThorDMX

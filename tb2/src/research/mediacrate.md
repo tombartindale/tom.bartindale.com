@@ -7,20 +7,7 @@ image: /images/mediacrate.jpg
 date: 10/2011
 
 publications:
-  - |
-    @CONFERENCE{Bartindale2009255,
-        author = {Bartindale, Tom and Hook, Jonathan and Olivier, Patrick},
-        title = {Media crate: Tangible live media production interface},
-        year = {2009},
-        journal = {Proceedings of the 3rd International Conference on Tangible and Embedded Interaction, TEI'09},
-        pages = {255 – 262},
-        doi = {10.1145/1517664.1517718},
-        url = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-70349153033&doi=10.1145%2f1517664.1517718&partnerID=40&md5=3dcbd45b766561661cd0df273e9e459d},
-        type = {Conference paper},
-        publication_stage = {Final},
-        source = {Scopus},
-        note = {Cited by: 7}
-    }
+  - Bartindale2009255
 ---
 
 # MediaCrate

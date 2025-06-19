@@ -1,25 +1,26 @@
 <template>
   <div class="side-panel">
     <img class="img" :src="info.frontmatter.image" />
+    <div class="text">
+      <h4>When</h4>
+      <div>~{{ simpleDate(info.frontmatter.date) }}</div>
 
-    <h4>When</h4>
-    <div>~{{ simpleDate(info.frontmatter.date) }}</div>
+      <h4 v-if="info.frontmatter.links?.length">Links</h4>
+      <a
+        target="_BLANK"
+        :href="link.url"
+        v-for="link of info.frontmatter.links"
+        >{{ link.title }}</a
+      >
 
-    <h4 v-if="info.frontmatter.links?.length">Links</h4>
-    <a
-      target="_BLANK"
-      :href="link.url"
-      v-for="link of info.frontmatter.links"
-      >{{ link.title }}</a
-    >
-
-    <div v-if="pubs.length">
-      <h4>Related Publications</h4>
-      <div v-for="pub of pubs" :key="pub.id" class="pub">
-        <a :href="pub.url">{{ pub.title }}</a>
-        <div class="author">{{ pub.author }}</div>
-        <div class="year">{{ pub.year }}</div>
-        <div class="venue">{{ pub.booktitle }}</div>
+      <div v-if="pubs.length">
+        <h4>Related Publications</h4>
+        <div v-for="pub of pubs" :key="pub.id" class="pub">
+          <a :href="pub.url">{{ pub.title }}</a>
+          <div class="author">{{ pub.author }}</div>
+          <div class="year">{{ pub.year }}</div>
+          <div class="venue">{{ pub.booktitle }}</div>
+        </div>
       </div>
     </div>
   </div>
@@ -27,24 +28,32 @@
 
 <script>
 var bibtexParse = require("@orcid/bibtex-parse-js");
-
+import bibText from "/references.bib";
+import find from "lodash/find";
 export default {
   mounted() {
     this.info = this.$page;
     // console.log(this.info.frontmatter.publications);
 
-    if (this.info.frontmatter.publications)
+    if (this.info.frontmatter.publications) {
+      //load publications from main file:
+      const allRefs = bibtexParse.toJSON(bibText);
+      // console.log(allRefs);
       for (const paper of this.info.frontmatter.publications) {
-        // console.log(paper);
         try {
+          const pp = find(allRefs, { citationKey: paper });
+          // console.log(pp);
+          if (pp) this.pubs.push(pp.entryTags);
+          //find the paper in the main biblist based on the reference:
           // console.log(paper);
-          const bibJSON = bibtexParse.toJSON(paper);
+          // const bibJSON = bibtexParse.toJSON(paper);
           // console.log(bibJSON);
-          if (bibJSON.length) this.pubs.push(bibJSON[0].entryTags);
+          // if (bibJSON.length) this.pubs.push(bibJSON[0].entryTags);
         } catch (e) {
           console.error(e);
         }
       }
+    }
   },
   methods: {
     simpleDate(date) {
@@ -73,12 +82,19 @@ export default {
 <style lang="css" scoped>
 .side-panel {
   overflow: hidden;
-  padding-top: 2.5rem;
+
   /* height: 50vh; */
+  background: #ededed;
+  border-radius: 8px;
+}
+
+.text {
+  padding: 8px;
+  /* padding-top: 2.5rem; */
 }
 
 .img {
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .pub div,
@@ -98,7 +114,7 @@ export default {
 h4 {
   margin: 0;
   padding: 0;
-  margin-top: 1rem;
+  margin-top: 0.8rem;
   font-weight: 300;
   font-size: 0.8rem;
   /* line-height: 1px !important; */

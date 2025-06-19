@@ -7,21 +7,7 @@ image: /images/tryfilm.jpg
 date: 09/2013
 
 publications:
-  - |
-    @CONFERENCE{Bartindale20161412,
-      author = {Bartindale, Tom and Schofield, Guy and Crivellaro, Clara and Wright, Peter},
-      title = {TryFilm: Situated support for interactive media productions},
-      year = {2016},
-      journal = {Proceedings of the ACM Conference on Computer Supported Cooperative Work, CSCW},
-      volume = {27},
-      pages = {1412 – 1422},
-      doi = {10.1145/2818048.2819929},
-      url = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84963576400&doi=10.1145%2f2818048.2819929&partnerID=40&md5=54194b634b905d38be46e4f39b974bcc},
-      type = {Conference paper},
-      publication_stage = {Final},
-      source = {Scopus},
-      note = {Cited by: 12; All Open Access, Bronze Open Access, Green Open Access}
-    }
+  - Bartindale20161412
 ---
 
 # TryFilm
