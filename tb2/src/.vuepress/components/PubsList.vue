@@ -6,9 +6,9 @@
       </span>
     </div>
 
-    <div v-for="index in sorted" :key="index" class="project-item">
+    <div v-for="index in sorted" :key="index">
       <a class="year" :name="index">{{ index }}</a>
-      <div v-for="paper in items[index]">
+      <div v-for="paper in items[index]" class="project-item">
         <p>
           <a target="_BLANK" :href="`https://doi.org/${paper.entryTags.doi}`"
             ><h4 style="margin-bottom: 0">
@@ -71,15 +71,36 @@ export default {
   padding: 0;
   margin: 0;
   color: #ccc;
+  margin-bottom: 1rem;
 }
 
 h4 {
   font-weight: 400;
+  margin: 0;
 }
 
 .nav {
   text-align: center;
   margin-bottom: 3rem;
   margin-top: -3rem;
+}
+
+.project-item {
+  background: white;
+  border-radius: 0.4rem;
+  position: relative;
+  border: 1px solid #eee;
+  overflow: hidden;
+  padding: 12px;
+  margin-bottom: 18px;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 840px;
+  max-width: calc(100% - 4rem);
+}
+
+.project-item p {
+  margin: 0;
 }
 </style>

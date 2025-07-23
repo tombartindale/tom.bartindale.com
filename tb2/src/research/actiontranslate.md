@@ -1,7 +1,7 @@
 ---
 title: Action Translate
 
-description: Web platform that coordinates bi-lingual volunteers contributing to NGO translations.
+description: Coordinates bi-lingual volunteers contributing to NGO translations.
 image: /images/at1.jpg
 
 links:

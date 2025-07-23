@@ -6,6 +6,8 @@
       <div>~{{ simpleDate(info.frontmatter.date) }}</div>
 
       <h4 v-if="info.frontmatter.links?.length">Links</h4>
+      <!-- <VPIcon icon="link" /> -->
+
       <a
         target="_BLANK"
         :href="link.url"
@@ -17,9 +19,10 @@
         <h4>Related Publications</h4>
         <div v-for="pub of pubs" :key="pub.id" class="pub">
           <a :href="pub.url">{{ pub.title }}</a>
-          <div class="author">{{ pub.author }}</div>
-          <div class="year">{{ pub.year }}</div>
-          <div class="venue">{{ pub.booktitle }}</div>
+          <br />
+          <span class="author">{{ pub.author }} &middot;</span>
+          <span class="year">{{ pub.year }}</span>
+          <!-- <div class="venue">{{ pub.booktitle }}</div> -->
         </div>
       </div>
     </div>
@@ -84,17 +87,18 @@ export default {
   overflow: hidden;
 
   /* height: 50vh; */
-  background: #ededed;
-  border-radius: 8px;
 }
 
 .text {
   padding: 8px;
+  background: #fff;
+  border-radius: 6px;
+  margin-top: 4px;
   /* padding-top: 2.5rem; */
 }
 
 .img {
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
 .pub div,
@@ -103,9 +107,11 @@ export default {
 }
 .author {
   color: #aaa;
+  font-size: 0.8rem;
 }
 .year {
   color: #aaa;
+  font-size: 0.8rem;
 }
 .venue {
   color: #aaa;

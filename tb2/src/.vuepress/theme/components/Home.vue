@@ -38,6 +38,8 @@
             {{ data.tagline || $description || "" }}
           </p>
 
+          <Content slot-key="quote" />
+
           <p v-if="data.actionText && data.actionLink" class="action">
             <NavLink class="action-button" :item="actionLink" />
           </p>
@@ -91,6 +93,7 @@ export default {
 </script>
 
 <style lang="stylus">
+
 .hero
   margin-bottom 2.7rem
 
@@ -105,8 +108,8 @@ export default {
   flex-basis 30%
   aspect-ratio 1 / 1
   text-align center
-  padding-left 2.7rem
-  padding-right 2.7rem
+
+  padding-right 2rem
 
 .hero-flex div
 
@@ -163,7 +166,7 @@ export default {
       font-size 3rem
 
 
-    .description
+    .description, q
 
       line-height 1.75em
       color #888

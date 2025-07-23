@@ -2,9 +2,15 @@
 home: true
 heroImage: /profile.jpg
 tagline:
-  I am a researcher in Human-Computer Interaction with a focus on new media production technologies and innovative interaction methods. I explore the opportunities presented by mobile computing, collaborative interaction, and novel technologies for media production and delivery.
+  I am a researcher in Human-Computer Interaction with a focus on new media production technologies and innovative interaction methods.
 
-  With hands-on experience in event management and production technologies, I envision new approaches to media consumption and creation. My research focuses on applying these technologies to support non-professional communities in sectors such as mental health, public health, international development, and higher education.
+  I explore the opportunities presented by mobile computing, collaborative interaction, and novel technologies for media production and delivery, particulary in supporting coordination of collaborative
+
+  With hands-on experience in event management and production technologies, I envision new approaches to media consumption and creation.
+
+  My research focuses on applying these technologies to support non-professional communities in sectors such as mental health, public health, international development, and higher education.
+
+  # Coordinating communities for collective action
 # actionText: Quick Start →
 # actionLink: /guide/
 # features:
@@ -17,6 +23,10 @@ tagline:
 # footer: Made by  with ❤️
 ---
 
+::: slot quote
+<q>Coordinating communities for collective action</q>
+:::
+
 ::: slot hero-left
 
 <!-- <a href="/tom_bartindale_cv.pdf" class="btn">Download my CV</a> -->
@@ -28,7 +38,7 @@ tagline:
 
 # Current Position
 
-I am currently an Associate Professor (Reader) at Northumbria University, Newcastle upon Tyne, UK. <a href="https://northumbria.ac.uk/about-us/our-staff/tom-bartindale">View Institutional Profile</a>
+I am currently an Associate Professor (Reader) at Northumbria University, Newcastle upon Tyne, UK. <a href="https://www.northumbria.ac.uk/about-us/our-staff/b/tom-bartindale/">View Institutional Profile</a>
 
 <small class="small">
 Previously, I co-founded the Action Lab research group at Monash University, Melbourne, and worked at Open Lab at Newcastle University, UK
