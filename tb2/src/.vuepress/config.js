@@ -53,6 +53,10 @@ module.exports = {
         text: "Roles",
         link: "/roles/",
       },
+      {
+        text: "Consultancy",
+        link: "/media/",
+      },
     ],
     smoothScroll: true,
     sidebar: {
